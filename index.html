@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceirão Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="logo">🎮 Terceirão Games</h1>
+            <nav>
+                <button class="nav-btn" onclick="showSection('home')">Início</button>
+                <button class="nav-btn" onclick="showSection('games')">Jogos</button>
+                <button class="nav-btn" onclick="showSection('about')">Sobre</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="section active">
+            <div class="hero">
+                <h2 class="hero-title">Welcome to Terceirão Games!</h2>
+                <p class="hero-subtitle">A melhor e mais interativa plataforma hospedeira de jogos do Colégio Gisella!</p>
+                <button class="cta-btn" onclick="showSection('games')">Ver Jogos</button>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <h2 class="section-title">Nossos Jogos</h2>
+            <div class="games-grid" id="gamesGrid">
+                <!-- Os jogos serão adicionados aqui -->
+            </div>
+            <div class="add-game-section">
+                <h3>Adicionar Novo Jogo</h3>
+                <form id="addGameForm">
+                    <input type="text" id="gameName" placeholder="Nome do Jogo" required>
+                    <input type="url" id="gameUrl" placeholder="Link do Jogo (https://...)" required>
+                    <input type="text" id="gameImage" placeholder="URL da Imagem (opcional)">
+                    <button type="submit" class="add-btn">Adicionar Jogo</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="about-content">
+                <h2 class="section-title">Sobre o Terceirão Games</h2>
+                <p>Terceirão Games é a plataforma com maior custo benefício para os alunos dos terceiros anos do Ensino Médio do Colégio Gisella salvarem e compartilharem seus jogos de forma fácil e organizada! </p>
+                <div class="features">
+                    <div class="feature-card">
+                        <span class="feature-icon">🎯</span>
+                        <h3>Fácil de Usar</h3>
+                        <p>Interface intuitiva e simples</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Rápido</h3>
+                        <p>Acesso instantâneo aos seus jogos</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📱</span>
+                        <h3>Responsivo</h3>
+                        <p>Funciona em qualquer dispositivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Terceirão Games</p>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
